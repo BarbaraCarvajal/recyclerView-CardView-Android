@@ -25,9 +25,9 @@ class AdaptadorCustom: RecyclerView.Adapter<AdaptadorCustom.ViewHolder>() {
     }
 
     override fun onBindViewHolder(ViewHolder: ViewHolder, i: Int) {
-        ViewHolder.itemTitle.text = titles[1]
-        ViewHolder.itemDetail.text = details[1]
-        ViewHolder.itemImage.setImageResource(images[1])
+        ViewHolder.itemTitle.text = titles[i]
+        ViewHolder.itemDetail.text = details[i]
+        ViewHolder.itemImage.setImageResource(images[i])
     }
 
     override fun getItemCount(): Int {
